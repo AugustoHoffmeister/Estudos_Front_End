@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo dropzone + JS</title>
+    <style>
+        .caixa {
+            width:100px;
+            height:100px;
+            background-color: chocolate;
+            margin-bottom: 20px;
+        }
+        .drop {
+            width:150px;
+            height:150px;
+            border:chocolate 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <h2>Atributo dropzone + JS</h2>
+    <p>Define se o elemento arrastado e solto neste elemento será copiado ou movido (copy/move).</p>
+
+    <div id="c1" class="caixa" draggable="true"></div>
+    <div id="c2" class="caixa" draggable="true"></div>
+
+    <div class="drop" dropzone="copy"></div>
+
+    <script>
+    const caixas = document.querySelectorAll('.caixa');
+    const dropZone = document.querySelector('[dropzone]');
+
+    caixas.forEach(caixaEl => {
+
+        caixaEl.addEventListener('dragstart', e => {
+    
+            e.dataTransfer.setData('Text', e.target.id);
+            console.log(e.target.id);
+        });
+    });
+    dropZone.addEventListener('dragover', e => {
+        e.preventDefault();
+    });
+
+    dropZone.addEventListener('drop', e => {
+        console.log(e.dataTransfer.getData('drop!!!'));
+    });
+
+    </script>
+</body>
+</html>

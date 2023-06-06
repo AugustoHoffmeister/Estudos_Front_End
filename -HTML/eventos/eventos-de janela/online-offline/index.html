@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offline e online</title>
+</head>
+<body ononline="debug(event)" onoffline="debug(event)">
+    <h2>offline e online</h2>
+    <p>disparado quando o navegador é desconectado da internet.</p>
+    <p>disparado quando o navegador é conectado da internet.</p>
+    <a href="https://www.youtube.com/watch?v=sLpaBAiutaM&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=25&ab_channel=hcode" target="_blank">Evento offline e online do HTML 5</a>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+            return 'Evento: '+ e.type;
+        }
+    </script>
+</body>
+</html>

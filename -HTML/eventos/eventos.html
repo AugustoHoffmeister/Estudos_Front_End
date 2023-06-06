@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos das Tags do HTML 5</title>
+    <style>
+        span {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Eventos das Tags do HTML 5</h2>
+    <p>Eventos são gatilhos disparados devido alguma <strong>interação</strong>.</p>
+    <p>Amaioria são disparados por <strong>ações do usuário</strong>.</p>
+    <p>Normalmente executamos algum código <strong>JavaScript</strong> após um evento acontecer.</p>
+    <p>Temos eventos de: <strong>Janela, Formulário, Teclado, Mouse, Arrasto, Transferência, Mídia</strong> e outros.</p>
+    <p>Nos atributos HTML todo evento deve ter o prefixo "<span>on</span>"</p>
+
+    <h2>Eventos de Janela:</h2>
+    <p><strong>afterprint</strong>: disparado depois da página ser impressa.</p>
+    <p><strong>beforeprint</strong>: disparado antes da página ser impressa.</p>
+    <p><strong>beforeunload</strong>: disparado antes do navegador carregar outra página.</p>
+    <p><strong>error</strong>: disparado quando ocorrer um erro.</p>
+    <p><strong>hashchange</strong>: disparado quando hash da url da página é alterado.</p>
+    <p><strong>load</strong>: disparado quando toda a página for carregada.</p>
+    <p><strong>unload</strong>: disparado quando o usuário atualiza a página ou fecha a janela.</p>
+    <p><strong>message</strong>: disparado quando ocorrer uma mensagem.</p>
+    <p><strong>offline</strong>: disparado quando o navegador é desconectado da internet.</p>
+    <p><strong>online</strong>: disparado quando o navegador é conectado da internet.</p>
+    <p><strong>pagehide</strong>: disparado quando a página é ocultada.</p>
+    <p><strong>pageshow</strong>: disparado quando a página é mostrada.</p>
+    <p><strong>popstate</strong>: disparado quando a ocorrência no histórico do navegador é alterada.</p>
+    <p><strong>resize</strong>: disparado quando a janela é redimensionada.</p>
+    <p><strong>storage</strong>: disparado quando o armazenamento do navegador é alterado.</p>
+
+    <h2>Eventos de Formulário:</h2>
+    <p><strong>blur:</strong> disparado quando o foco do elemento é removido.</p>
+    <p><strong>change:</strong> disparado quando termina de altera o valor do elemento.</p>
+    <p><strong>contextmenu:</strong> disparado quando o usuário abre o menu de contexto.</p>
+    <p><strong>focus:</strong> disparado quando o elemento é focado.</p>
+    <p><strong>input:</strong> disparado quando o elemento recebe uma entrada de valor.</p>
+    <p><strong>invalid:</strong> disparado quando o elemento é inválido.</p>
+    <p><strong>reset:</strong> disparado quando o elemento é redefinido ao estado inicial.</p>
+    <p><strong>search:</strong> disparado quando o elemento input do tipo search é enviado.</p>
+    <p><strong>select:</strong> disparado quando o valor do elemento é selecionado.</p>
+    <p><strong>submit:</strong> disparado quando o Formulário é enviado.</p>
+
+    <h2>Eventos de Teclado:</h2>
+    <p><strong>keydown</strong>: disparado quando a tecla vai para baixo.</p>
+    <p><strong>keypress</strong>: disparado quando a tecla é precionada.</p>
+    <p><strong>keyup</strong>: disparado quando a tecla é solta.</p>
+    
+    <h2>Eventos de Mouse:</h2>
+    <p><strong>click</strong>: disparado quando o elemento recebe um clique.</p>
+    <p><strong>dbclick</strong>: disparado quando o elemento recebe um duplo clique.</p>
+    <p><strong>mousedown</strong>: disparado quando o botão do clique vai para baixo.</p>
+    <p><strong>mouseup</strong>: disparado quando o botão do clique é solto.</p>
+    <p><strong>mousemove</strong>: disparado quando o cursor do mouse se move sobre o elemento.</p>
+    <p><strong>mouseout</strong>: disparado quando o cursor do mouse não está em cima do elemento.</p>
+    <p><strong>mouseover</strong>: disparado quando o cursor do mouse está em cima do elemento.</p>
+    <p><strong>mouseenter</strong>: disparado quando o cursor do mouse entra em cima do elemento.</p>
+    <p><strong>mouseleave</strong>: disparado quando o cursor do mouse sai em cima do elemento.</p>
+    <p><strong>wheel</strong>: disparado quando a roda do mouse é rolada.</p>
+
+    <h2>Eventos de Arrasto:</h2>
+    <p><strong>drag</strong>: disparado quando o elemento é arrastado.</p>
+    <p><strong>dragend</strong>: disparado quando o elemento para de ser arrastado.</p>
+    <p><strong>dragenter</strong>: disparado quando o elemento arrastado entra em um elemento que permite soltar.</p>
+    <p><strong>dragleave</strong>: disparado quando o elemento arrastado sai de cima de um elemento que permite soltar.</p>
+    <p><strong>dragover</strong>: disparado quando o elemento arrastado passa em um elemento que permite soltar.</p>
+    <p><strong>dragstart</strong>: disparado quando o elemento começa a ser arrastado.</p>
+    <p><strong>drop</strong>: disparado quando o elemento é solto.</p>
+    <p><strong>scroll</strong>: disparado quando o scroll é rolado.</p>
+
+    <h2>Eventos de Transferência:</h2>
+    <p><strong>copy</strong>: disparado quando o conteúdo do elemento é copiado.</p>
+    <p><strong>cut</strong>: disparado quando o conteúdo do elemento é recortado.</p>
+    <p><strong>paste</strong>: disparado quando o conteúdo do elemento é colado.</p>
+
+    <h2>Eventos de Midia:</h2>
+    <p><strong>abort</strong>: disparado quando o carregamento da midia é cancelado.</p>
+    <p><strong>canplay</strong>: disparado quando a midia carregou o suficiente para começar.</p>
+    <p><strong>canplaythrough</strong>: disparado quando a midia carregou e pode ser reproduzido até o final.</p>
+    <p><strong>cuechange</strong>: disparado quando o texto de uma trilha é alterado.</p>
+    <p><strong>durationchange</strong>: disparado quando o tamanho total da midia é alterado.</p>
+    <p><strong>emptied</strong>: disparado quando acontece algum problema e a midia fica indisponível.</p>
+    <p><strong>ended</strong>: disparado quando a midia foi consumida até o fim.</p>
+    <p><strong>error</strong>: disparado quando um erro acontece.</p>
+    <p><strong>loadeddata</strong>: disparado quando os dados da midia são carregados.</p>
+    <p><strong>loadedmetadata</strong>: disparado quando os metadados da midia são carregados.</p>
+    <p><strong>loadstart</strong>: disparado quando os dados da midia começam a ser carregados.</p>
+    <p><strong>pause</strong>: disparado quando a midia é pausada.</p>
+    <p><strong>play</strong>: disparado quando a midia é começada.</p>
+    <p><strong>playind</strong>: disparado quando depois que a midia realmente começou.</p>
+    <p><strong>progress</strong>: disparado enquanto o navegador obtem os dados da midia.</p>
+    <p><strong>ratechange</strong>: disparado quando a taxa de reprodução é alterada.</p>
+    <p><strong>seeked</strong>: disparado quando a busca de dados da midia terminou.</p>
+    <p><strong>seeking</strong>: disparado quando a busca de dados da midia está acontecendo.</p>
+    <p><strong>stalled</strong>: disparado quando o navegador não pode buscar os dados de midia por qualquer motivo.</p>
+    <p><strong>suspend</strong>: disparado quando a busca de daods da midia é parada antes de ser completamente carregada.</p>
+    <p><strong>timeupdate</strong>: disparado quando a posição da reprodução é alterada.</p>
+    <p><strong>volumechange</strong>: disparado quando o volume do áudio da midia é alterado.</p>
+    <p><strong>waiting</strong>: disparado quando a midia é pausada para armazenar mais dados em buffer.</p>
+
+    <h2>Outros</h2>
+    <p><strong>toggle</strong>: disparado quando o usuário abre ou fecha o elemento details</p>
+</body>
+</html>

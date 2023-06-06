@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseleave</title>
+    <style>
+        button{
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body onclick="debug(event)">
+    <h2>Eventos de Mouse: mouseleave</h2>
+    <p>disparado quando o cursor do mouse sai de cima do elemento.</p>
+   
+    <a href="https://www.youtube.com/watch?v=M-gUrn2EWmQ&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=51&ab_channel=hcode" target="_blank">aula 33: Evento mouseleave do HTML 5: </a>
+
+    <button type="button" onmouseleave="debug(event)" onmouseout="debug(event)">Click</button>
+    
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+        }
+    </script>
+</body>
+</html>

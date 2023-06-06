@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover</title>
+    <style>
+        div{
+            height: 150px;
+            width: 150px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body onclick="debug(event)">
+    <h2>Eventos de Mouse: mouseover</h2>
+    <p>disparado quando o cursor do mouse está em cima do elemento.</p>
+   
+    <a href="https://www.youtube.com/watch?v=eHzLmwCqCQE&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=47&ab_channel=hcode" target="_blank">aula 29: Evento mouseover do HTML 5: </a>
+
+    <div onmouseover="debug(event)" onmousemove="debug(event)" onmouseout="debug(event)"></div>
+    
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+        }
+    </script>
+</body>
+</html>

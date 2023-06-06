@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag aside</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        header, footer{
+            height:10vh;
+            background-color:lightgray;
+        }
+        section{
+            display:flex;
+            flex-direction:row;
+        }
+        main{
+            height:80vh;
+            background-color:gray;
+            flex:1;
+        }
+        aside{
+            height:80vh;
+            background-color:gold;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Tag aside</h2>
+        <p>define um conteúdo ao lado de um artigo</p>
+        <p>Importante para separar semanticamente o conteúdo</p>
+    </header>
+
+    <section>
+
+        <main>
+            <h2>Conteúdo principal</h2>
+        </main>
+
+        <aside>Conteúdo aside</aside>
+
+    </section>
+
+    <footer>rodape</footer>
+
+</body>
+</html>

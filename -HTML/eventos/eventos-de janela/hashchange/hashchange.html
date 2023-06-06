@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hashchange</title>
+</head>
+<body onhashchange="debug(event)">
+    <h2>hashchange</h2>
+    <p> disparado quando hash da url da página é alterado.</p>
+    <a href="https://www.youtube.com/watch?v=46BdNCqCcbk&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=25&ab_channel=hcode" target="_blank">Evento hashchange do HTML 5</a>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+            return 'Evento: '+ e.type;
+        }
+    </script>
+</body>
+</html>

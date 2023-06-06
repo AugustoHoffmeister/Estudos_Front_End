@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reset</title>
+</head>
+<body>
+    <h2>Eventos de Formulário: reset</h2>
+    <p>disparado quando o elemento é redefinido ao estado inicial.</p>
+   
+    <a href="https://www.youtube.com/watch?v=B2pCM92-sHk&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=35&ab_channel=hcode" target="_blank">aula 17: Evento reset do HTML 5: </a>
+
+    <form onreset="debug(event)">
+        <input type="text">
+        <button type="reset">Limpar</button>
+    </form>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+            // return 'Evento: '+ e.type;
+        }
+    </script>
+</body>
+</html>

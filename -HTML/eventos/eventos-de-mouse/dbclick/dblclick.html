@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dblclick</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body onclick="debug(event)">
+    <h2>Eventos de Mouse: dblclick</h2>
+    <p>disparado quando o elemento recebe um duplo clique.</p>
+   
+    <a href="https://www.youtube.com/watch?v=zTkbqQ0VYFs&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=43&ab_channel=hcode" target="_blank">aula 25: Evento dblclick do HTML 5: </a>
+
+    <button type="button" ondblclick="debug(event)">Click</button>
+    
+    <script>
+        function debug(e) {
+            // e.stopPropagation();
+            console.log('Evento: '+ e.type);
+        }
+    </script>
+</body>
+</html>

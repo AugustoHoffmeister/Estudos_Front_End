@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body oninput="debug(event)">
+    <h2>Eventos de Formulário: input</h2>
+    <p>disparado quando o elemento recebe uma entrada de valor.</p>
+   
+    <a href="https://www.youtube.com/watch?v=6O_f2TslBZM&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=33&ab_channel=hcode" target="_blank">aula 15: Evento input do HTML 5: </a>
+
+    <input type="text" oninput="debug(event)">
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+            // return 'Evento: '+ e.type;
+        }
+    </script>
+</body>
+</html>

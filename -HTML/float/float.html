@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS:Ainda usa float? É sério!</title>
+    <style>
+        body
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 2rem 3rem;
+        }
+        .example-1 p:first-child::first-letter
+        {
+            font-size: 2rem;
+            float: left;
+            /* background-color: red; */
+            margin-top: -.5rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .example-1 img
+        {
+            float: right;
+            margin: 0 0 .5rem 1rem;
+            position: relative;
+            right: -2rem;
+            height: 120px;
+            width: 120px;
+            box-shadow: -.5rem .5rem 1rem rgba(0, 0, 0, .5);
+        }
+        .example-2 blockquote
+        {
+            background-color: white;
+            color: purple;
+            padding: 1em;
+            box-shadow: -.5rem .5rem 1rem rgba(0, 0, 0, .5);
+        }
+        .example-2 blockquote::before
+        {
+            content: open-quote;
+            float: left;
+            font-size: 3rem;
+            /* background-color: red; */
+            margin-top: -.5rem;
+            
+        }
+        .example-2 blockquote::after
+        {
+            content: close-quote;
+            float: right;
+            font-size: 3rem;
+            /* background-color: red; */
+            margin-top: -1rem;
+            
+        }
+       
+        footer
+        {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="example-1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et, soluta quisquam veritatis quo aperiam quam cum at culpa nulla dicta cupiditate rerum id recusandae, voluptatum commodi. Corrupti, atque dolorum!
+            </p> <img src="https://preview.redd.it/ng9urlxn0c441.png?auto=webp&s=84d34b2ced1da4eca106e9ef07ea86b234152ef8" alt="Imagem Lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>
+                <a href="https://www.youtube.com/watch?v=eQdTJa0HbtE&list=WL&index=33&t=16s&ab_channel=serfrontend" target="_blank">Aprenda a usar o float corretamente.</a>
+            </p>
+        </section>
+        <section class="example-2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi enim eos, aspernatur doloribus omnis reiciendis maxime non at blanditiis, temporibus praesentium hic voluptate quod repudiandae eius consectetur voluptates. Enim.
+            </p>
+            <blockquote>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga, molestias temporibus reiciendis sunt consectetur voluptates porro, pariatur, tempore maiores molestiae commodi soluta dolor esse eaque quas doloremque voluptate officiis.
+                </p>
+            </blockquote>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eius est illum id hic quis beatae, aperiam neque. Earum officiis eligendi amet repellat reprehenderit enim aliquam ipsam laudantium magnam magni.
+            </p>
+        </section>
+    </main>
+    <footer>
+        Entendeu como usar corretamente o float?
+    </footer>
+</body>
+</html>

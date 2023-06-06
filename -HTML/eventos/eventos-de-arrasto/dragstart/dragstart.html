@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dragenter</title>
+    <style>
+        .mover{
+            height: 150px;
+            width: 150px;
+            background-color: tomato;
+        }
+        .alvo{
+            height: 150px;
+            width: 150px;
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Eventos de Arrasto: dragenter</h2>
+    <p>disparado quando o elemento começa a ser arrastado.</p>
+   
+    <a href="https://www.youtube.com/watch?v=UTlWouUL43Q&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=57&ab_channel=hcode" target="_blank">aula 39: Evento dragenter do HTML 5: </a>
+
+    <div class="mover" ondragstart="debug(event)" ondrag="debug(event)" ondragend="debug(event)" draggable="true">Mover</div>
+
+    <div class="alvo" ondragenter="debug(event)" ondragleave="debug(event)"
+     ondragover="debug(event)">Alvo</div>
+    
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+        }
+    </script>
+</body>
+</html>

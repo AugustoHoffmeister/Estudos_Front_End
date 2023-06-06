@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paste</title>
+    <style>
+        
+    </style>
+</head>
+<body onpaste="debug(event)">
+    <h2>Eventos de Transferência: paste</h2>
+    <p>disparado quando o conteúdo do elemento é colado.</p>
+   
+    <a href="https://www.youtube.com/watch?v=fBsYYGttXuY&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=62&ab_channel=hcode" target="_blank">aula 43: Evento paste do HTML 5: </a>
+
+    <input type="text">
+    
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+        }
+    </script>
+</body>
+</html>

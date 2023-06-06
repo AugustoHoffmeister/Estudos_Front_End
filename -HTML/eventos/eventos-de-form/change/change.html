@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change</title>
+</head>
+<body onchange="debug(event)">
+    <h2>Eventos de Formulário: change</h2>
+    <p>disparado quando termina de altera o valor do elemento.</p>
+   
+    <a href="https://www.youtube.com/watch?v=e-akIrVnXJA&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=30&ab_channel=hcode" target="_blank">aula 12: Evento change do HTML 5</a>
+
+    <input type="text" onchange="debug(event)">
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+            // return 'Evento: '+ e.type;
+        }
+    </script>
+</body>
+</html>

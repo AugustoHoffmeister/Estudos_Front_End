@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keypress</title>
+</head>
+<body>
+    <h2>Eventos de Teclado: keypress</h2>
+    <p>disparado quando a tecla é precionada.</p>
+   
+    <a href="https://www.youtube.com/watch?v=MWJAPqO5TJU&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=40&ab_channel=hcode" target="_blank">aula 22: Evento keypress do HTML 5: </a>
+
+    <input type="text" onkeydown="debug(event)" onkeypress="debug(event)">
+    
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+        }
+    </script>
+</body>
+</html>

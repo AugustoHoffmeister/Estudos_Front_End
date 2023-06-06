@@ -1,0 +1,24 @@
+.d-block
+{
+    display: block;
+    border: 2px solid;
+    background-color: yellowgreen;
+    height: 70px;
+    width: 70px;
+}
+.d-inline
+{
+    display: inline;
+    border: 2px solid;
+    background-color: yellow;
+    height: 70px; /*não funciona com inline*/ 
+    width: 70px; /*não funciona com inline*/
+}
+.d-inline-block
+{
+    display: inline-block;
+    border: 2px solid;
+    background-color: royalblue;
+    height: 70px;
+    width: 70px;
+}
