@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .block{
+            border: 1px solid red;
+        }
+        .inline{
+            border: 1px solid red;
+        }
+        .none:hover{
+            display: none;
+        }
+        li{
+            display: inline-block;
+            width: 100px;
+            height: 35px;
+            color: white;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .blue:hover{
+            visibility: hidden;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.youtube.com/watch?v=T6RPyXcuLj4&list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c&index=15&ab_channel=Programa%C3%A7%C3%A3oWeb" target="_blank">Aula 14 - Propriedade Display: </a>
+
+    <p>é a propriedade CSS mais importante para controlar o layout, especifica se/como um elemento é exibido.</p>
+    <p>---------------------------------------------------------------------------------------------------------------------------------------</p>
+    <p class="block"><strong>display-block</strong> - sempre começa em uma nova linha e ocupa toda a largura disponível.
+        <br> Exemplos: div, h1 - h6, p, form, header, footer, section.</p>
+    <p>---------------------------------------------------------------------------------------------------------------------------------------</p>        
+    <span class="inline"><strong>display-inline</strong> - não começa em uma nova linha e ocupa apenas a largura necessária.
+        <br> Exemplos: span, a, img, link.</span>
+    <p>---------------------------------------------------------------------------------------------------------------------------------------</p>
+    <p class="none"><strong>display-none</strong> - é normalmente usado com JavaScript para ocultar e mostrar elementos sem excluí-los e recriá-los. <br>Ex:ao passar o mouse sobre o paragrafo.</p>
+    <p>---------------------------------------------------------------------------------------------------------------------------------------</p>
+    <p><strong>display-inline-block</strong> - ocupam a mesma linha mas com comportamento de bloco.
+        <ul class="inlineBlock"> Ex:
+            <li class="red">Item 1</li>
+            <li class="blue">Item 2</li>
+            <li class="green">Item 3</li>
+        </ul>
+    </p>
+    <p><strong>visibility: hidden</strong> - esconde um elemento e ainda ocupará o mesmo espaço de antes.
+        <br> Ex: passe o mouse sobre o Item 2.
+    </p>
+    <p>---------------------------------------------------------------------------------------------------------------------------------------</p>
+</body>
+</html>

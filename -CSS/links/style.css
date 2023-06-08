@@ -1,0 +1,43 @@
+a.botao1{
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 4px solid greenyellow;
+    border-radius: 5px;
+}
+a.botao1:hover{
+    background-color: greenyellow;
+    color: black;
+    border: 4px solid darkgreen;
+    cursor:help;
+}
+a.botao2{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 4px solid lightblue;
+    border-radius: 5px;
+}
+a.botao2:hover{
+    background-color: lightblue;
+    color: black;
+    border: 4px solid blue;
+    cursor: cell;
+}
+
+a.botao3{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 4px solid tomato;
+    border-radius: 5px;
+}
+a.botao3:hover{
+    background-color: tomato;
+    color: black;
+    border: 4px solid brown;
+    cursor: wait;
+}

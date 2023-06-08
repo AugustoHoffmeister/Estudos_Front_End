@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        .familia {
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+        .segura {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .alternativa{
+            font-family: cursive;
+        }
+        .estilo{
+            font-style: oblique;
+        }
+        .tamanho{
+            font-size: 1.3em;
+        }
+        .google{
+            font-family: "Sofia", sans-serif;
+        }
+        .pares{
+            font-family: Georgia, serif;
+        }
+        .pares span{
+            font-family: Verdana, sans-serif;
+        }
+        .abreviada{
+            /* 
+            font-style: italic;
+            font-variant: small-caps;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 30px;
+            font-family: Georgia, serif;
+             */
+            font: italic small-caps bold 14px/30px Georgia, serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Font</h2>
+    <a href="https://www.youtube.com/watch?v=Ez40S3jaNSU&list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c&index=13&ab_channel=Programa%C3%A7%C3%A3oWeb" target="_blank">Aula 12 - Propriedade Font</a>
+    <ul>
+        <li>Escolher a fonte certa tem um grande impacto em como os leitores experimentam um site.</li>
+        <li>A fonte certa pode criar uma identidade forte para sua marca.</li>
+        <li>Usar uma fonte fácil de ler é importante.</li>
+        <li>A fonte agrega valor ao seu texto.</li>
+        <li>Também é importante escolher a cor e o tamanho do texto corretos para a fonte.</li>
+    </ul>
+
+    <ul>
+        <li class="familia">font-family - especifica a fonte de um texto.</li>
+        <li class="segura">font web safe - fontes instaladas universalmente em todos os navegadores e dispositivos.</li>
+        <li class="alternativa">font fallbacks - fontes comumente usados, organizados pelas 5 famílias de fontes genéricas.(serif, sans-serif, monospace, cursive, fantasy)</li>
+        <li class="estilo">font-style - estiliza a fonte.(itálico, oblique)</li>
+        <li class="tamanho">font-size - define o tamanho do texto.</li>
+        <li class="google">font Google - Se você não deseja usar nenhuma das fontes padrão em HTML, pode usar o Google Fonts</li>
+        <li class="pares"><span>font pairings</span> - combinação de fontes traz harmonia, sem ser muito parecida ou muito diferente.</li>
+        <li class="abreviada">font shorthand - é possível especificar todas as propriedades de fonte individuais em uma propriedade.</li>
+        <p>* No <strong>shorthand</strong> os valores <strong>font-size</strong> e <strong>font-family</strong> são obrigatórios. Se um dos outros valores estiver ausente, seu valor padrão será usado.</p>
+
+    </ul>
+</body>
+</html>

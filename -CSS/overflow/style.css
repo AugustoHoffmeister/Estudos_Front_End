@@ -1,0 +1,13 @@
+.exemplo{
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+    height: 50px;
+    overflow: auto;
+}
+.exemplo:hover{
+    background-color: lightgray;
+    color: black;
+    font-size: 22px;
+    height: 50px;
+}

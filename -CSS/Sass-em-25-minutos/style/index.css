@@ -1,0 +1,31 @@
+header, .material {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: gray;
+}
+header h2, .material h2 {
+  color: white;
+}
+header button, .material button {
+  background: green;
+}
+header button:hover, .material button:hover {
+  background: yellow;
+}
+header header p, .material header p, header .material p, .material .material p {
+  color: black;
+}
+
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: green;
+}
+
+.material a {
+  color: black;
+}/*# sourceMappingURL=index.css.map */
