@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 16 - SetTimeout e SetInterval</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+    button {
+        width: 200px;
+        height: 100px;
+    }
+    .start1, .start2 {
+        background-color: green;
+    }
+    .stop1, .stop2 {
+        background-color: red;
+    }
+</style>
+<body>
+    <h1>Evento de Tempo com JS</h1>
+    <a href="https://www.youtube.com/watch?v=UbGJhnXv8Po&ab_channel=Programa%C3%A7%C3%A3oWeb" target="
+    ">Aula 16 - SetTimeout e SetInterval.</a>
+
+    <h2>Controle de tempo: setTimeout</h2>
+    <h3 id="tempo1">0</h3>
+    <button class="start1" onclick="ativar1()">Ativar</button>
+    <button class="stop1" onclick="parar1()">Parar</button>
+
+    <br>
+
+    <h2>Controle de tempo: setInterval</h2>
+    <h3 id="tempo2">3</h3>
+    <button class="start2" onclick="ativar2()">Ativar</button>
+    <button class="stop2" onclick="parar2()">Parar</button>
+
+
+    <script src="setTime.js"></script>
+</body>
+</html>

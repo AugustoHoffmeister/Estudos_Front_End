@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Formulário com JS</title>
+    <style>
+        #formulario{
+            padding: 30px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Eventos de Formulário com JS</h2>
+    <p><strong>focus:</strong> disparado quando o elemento é focado.</p>
+    <p><strong>change:</strong> disparado quando termina de altera o valor do elemento.</p>
+    <p><strong>blur:</strong> disparado quando o foco do elemento é removido.</p>
+
+    <!-- onfocus  -->
+    <input id="formulario" type="text" placeholder="Digite aqui" value="Campo Obrigatório" onfocus="limpaTexto()" onblur="saiFoco()">
+    <br><br>
+    <!-- onchance  -->
+    <select id="seleciona" onchange="mudou()">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+    </select>
+
+    <script src="form.js"></script>
+</body>
+</html>

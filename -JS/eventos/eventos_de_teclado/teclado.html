@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Teclado com JS</title>
+    <style>
+        #formulario{
+            padding: 30px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Eventos de Teclado com JS</h2>
+    <p><strong>keydown</strong>: disparado quando a tecla vai para baixo.</p>
+    <p><strong>keypress</strong>: disparado quando a tecla é precionada e solta.</p>
+    <p><strong>keyup</strong>: disparado quando a tecla é solta.</p>
+
+    <!-- onkeypress  -->
+    <input id="formulario" type="text" placeholder="Digite aqui"
+    onkeypress="teclaPress()">
+
+    <script src="teclado.js"></script>
+</body>
+</html>
