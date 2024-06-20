@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, datalist e textarea</title>
+</head>
+<body>
+    <h1>Select, datalist e textarea</h1>
+    <form action="../cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="idestado">Estado:</label>
+            <select name="estado" id="idestado">
+                <option value="" select>---Escolha---</option>
+                <optgroup label="Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AP">Amapa</option>
+                    <option value="PA">Pará</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="AC">Acre</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piau</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+
+                <optgroup label="Centro-Oeste">
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="GO">Goiás</option>
+                </optgroup>
+
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <label for="idprofissao">Profissão:</label>
+            <input type="text" name="profissao" id="idprofissao" list="listaProfissao">
+            <datalist id="listaProfissao">
+                <option>Advogado</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Engenheiro</option>
+                <option>Medico</option>
+                <option>Professor</option>
+            </datalist>
+        </div>
+        <hr>
+        <div>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="idmsg" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

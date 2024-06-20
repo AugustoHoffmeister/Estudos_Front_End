@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag marquee</title>
+
+    <style>
+        .first{
+            background-color:lightgreen;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Atributos</h2>
+    <p>behavior: define como o texto serã rolado - scroll, slide, alternate</p>
+    <p>direction: define qual será a direção - left, right, up, down</p>
+    <p>width / height: largura / altura</p>
+    <p>loop: define o número de vezes que a rolagem será rolada</p>
+    <p>scrollamout: define a quant de rolagem em cada intervalo</p>
+    <p>scrolldelay: define o intervalo entre cada movimento de rolagem.</p>
+
+    <marquee class="first" behavior="alternate" direction="up" width="300" height="200">
+        <marquee behavior="alternate" >
+            <img src="imagens/bola-de-praia.png" alt="">
+        </marquee>
+        <marquee behavior="alternate" scrolldelay="200">
+            <img src="imagens/volei.png" alt="">
+        </marquee>
+    </marquee>
+
+</body>
+</html>

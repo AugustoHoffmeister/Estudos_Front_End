@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 08 - Checkbox e Radio button em HTML</title>
+</head>
+<body>
+    <h1>CheckBox e Radio Botão</h1>
+    <form action="../cadastro.php" method="get" autocomplete="on" >
+        <fieldset>
+            <legend>Sexo:</legend>
+            <input type="radio" name="sexo" value="M" id="idmasculino">
+            <label for="idmasculino">Masculino</label><br>
+            <input type="radio" name="sexo" value="F" id="idfeminino">
+            <label for="idfeminino">Feminino</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos:</legend>
+            <input type="checkbox" name="futebol" id="idfutebol">
+            <label for="idfutebol">Futebol</label><br>
+            <input type="checkbox" name="basquete" id="idbasquete">
+            <label for="idbasquete">Basquete</label><br>
+            <input type="checkbox" name="natacao" id="idnatacao">
+            <label for="idnatacao">Natação</label><br>
+            <input type="checkbox" name="tenis" id="idtenis">
+            <label for="idtenis">Tenis</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+</body>
+</html>

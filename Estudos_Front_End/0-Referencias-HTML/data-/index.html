@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo data</title>
+</head>
+<body>
+    <h2>Atributo data</h2>
+    <p>Usado para armazenar dados em um elemnto. No lugar do (*) deve definir um nome.</p>
+    
+    <ul>
+        <li data-id="1" data-email="josesilva80@gmail.com">Jose da Silva</li>
+        <li data-id="2" data-email="mariaa94@gmail.com">Maria Aparecida</li>
+    </ul>
+
+    <script>
+        document.querySelectorAll('li').forEach(liElemento => {
+            console.log(liElemento.dataset.email);
+        });
+    </script>
+
+</body>
+</html>

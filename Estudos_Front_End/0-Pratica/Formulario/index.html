@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function themeToggle(){
+            return document.documentElement.classList.toggle('light');
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <div class="formItem">
+            <label for="">Nome</label>
+            <input type="text">
+        </div>
+        <div class="formItem">
+            <label for="">E-mail</label>
+            <input type="text">
+        </div>
+        <div class="formItem">
+            <label for="">Mensagem</label>
+            <textarea></textarea>
+        </div>
+        <div class="formItem">
+            <button>Enviar</button>
+        </div>
+        <div class="formItem">
+            <button type="button" onclick="javascript:themeToggle()">Alterar Tema</button>
+        </div>
+        
+    </form>
+</body>
+</html>

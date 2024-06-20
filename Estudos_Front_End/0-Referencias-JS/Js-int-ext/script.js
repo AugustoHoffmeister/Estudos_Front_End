@@ -1,0 +1,2 @@
+
+alert('e JS externo');

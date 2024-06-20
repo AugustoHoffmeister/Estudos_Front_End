@@ -1,0 +1,22 @@
+body {
+    background: rgb(29,29,29);
+    color: white;
+    font-size: 13 pt Arial;
+}
+h1 {
+    text-align: center;
+}
+a:link, a:hover, a:active {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: solid;
+}
+p.center {
+    text-align: center;
+}
+iframe {
+    display: block;
+    margin: auto;
+}

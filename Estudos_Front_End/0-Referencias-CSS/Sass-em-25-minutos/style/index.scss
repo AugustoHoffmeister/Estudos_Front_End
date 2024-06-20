@@ -1,0 +1,14 @@
+@import './cores';
+
+@import './header';
+
+.contato {
+    @include flexCenter(row);
+    background: $secundary;
+}
+.material {
+  @extend header;
+  a {
+    color: $text-color2;
+  }
+}

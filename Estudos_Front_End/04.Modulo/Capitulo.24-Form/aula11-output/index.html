@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento output</title>
+</head>
+<body>
+    <h1>Elemento output</h1>
+    <form action="../cadastro.php" method="post" autocomplete="on">
+        <hr>
+        <div>
+            <label for="idnum">Numero</label>
+            <input type="range" name="num" id="idnum" min="0" max="9" value="0"
+            oninput="idvalue.innerHTML = Number(idnum.value)">
+            <output id="idvalue"></output>
+        </div>
+        <hr>
+        <div>
+            <label for="idn1">Numero 01:</label>
+            <input type="number" name="n1" id="idn1" min="0" max="99" required
+            oninput="idsoma.innerHTML = Number(idn1.value) + Number(idn2.value)">
+        </div>
+        <div>
+            <label for="idn2">Numero 02:</label>
+            <input type="number" name="n2" id="idn2" min="0" max="99" required
+            oninput="idsoma.innerHTML = Number(idn1.value) + Number(idn2.value)">
+        </div>
+        <div>
+            <label for="idsoma">Soma=</label>
+            <output name="soma" id="idsoma">0</output>
+        </div>
+        <hr>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Formulários com telefone e e-mail</title>
+    
+</head>
+<body>
+
+    <h2>E-mail e Telefone:</h2>
+
+    <form action="../cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+
+            <legends>Dados Pessoais</legends>
+
+            <p><strong>name</strong><br>
+                <label for="idname">Nome:</label>
+                <input type="text" name="name" id="idname"
+                minlength="3" maxlength="20"
+                autocomplete="name" required>
+            </p>
+            <p><strong>email</strong><br>
+                <label for="idemail">E-mail:</label>
+                <input type="email" name="email" id="idemail"
+                autocomplete="email" required>
+            </p>
+
+            <p><strong>tel</strong><br>
+                <label for="idtelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="idtelefone"
+                autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+            </p>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>

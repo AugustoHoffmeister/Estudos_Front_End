@@ -1,0 +1,34 @@
+html
+{
+    position: relative;/*padrão*/
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 150vh;
+}
+.p-relative
+{
+    position: relative;
+    margin-top: 50px;
+    padding: 15px 10px;
+    background: gold;
+    height: 100%;
+}
+.p-absolute
+{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: yellowgreen;
+}
+.p-fixed
+{
+    position: fixed;
+    background: royalblue;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+}

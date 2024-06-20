@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        /*Utilizando DevTools do Google Chrome*/
+        h1 {/*box-level*/
+            display: inline; /*muda o display*/
+            background: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: aqua;
+            */
+            border: 10px solid aqua;
+            /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+            margin: 20px 20px 40px 20px;
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+            outline: 5px dashed salmon;
+            /*
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            */
+            padding: 10px auto 20px auto;
+        }
+        a {/*inline-level*/
+            display: block;/*muda o display*/
+            /*
+            border-width: 5px;
+            border-style: solid;
+            border-color: brown;
+            */
+            border: 5px solid brown;
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>H1 é uma caixa box-level</h1>
+    <p>paragrafos tambem são box-level, mas <a href="#">links são caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

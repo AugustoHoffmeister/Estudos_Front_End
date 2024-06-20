@@ -1,0 +1,47 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    padding: 20px;
+}
+.container
+{
+    padding: 5px;
+    width: 400px;
+    border: 5px dashed gray;
+    border-radius: 5px;
+    display: flex;
+    
+    /* sentido do eixo principal */
+    flex-direction: row; /* por padrão */
+
+    /* alinhamento do eixo principal */
+    justify-content: space-evenly; /* flex-start - por padrão */
+
+    /* alinhamento do eixo transversal */
+    align-items: center; /* flex-start - por padrão */
+
+    /* Quebra de linha */
+    flex-wrap: wrap;/* nowrap - por padrão */
+
+     gap: 10px; /* espaçamento */
+
+     /* flex-flow = flex-direction + flex-wrap */
+     /* flex-flow: row wrap; */
+}
+.box
+{
+    background-color: brown;
+    font-size: 25px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

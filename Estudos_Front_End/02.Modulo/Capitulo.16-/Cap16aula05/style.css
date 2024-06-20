@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-color: #929292;
+}
+header
+{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+nav 
+{
+    background-color: #929292;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.562);
+}
+nav > a
+{
+    text-decoration: none;
+    margin-left: 5px;
+}
+nav > a::before
+{
+    text-decoration: underline;
+}
+main
+{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+aside
+{
+    text-align: right;
+}
+footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}

@@ -1,0 +1,82 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+     font-size: 16px; /* é tamanho por padão  */
+}
+/* Medidas estáticas   */
+/* - Pixel  */
+.div-1
+{
+    background-color: green;
+    width: 100px;
+}
+.container-1 div{
+    background-color: yellow;
+    margin-top: 1px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Medidas relativas  */
+/* - Percentagem  */
+.div-2
+{
+    background-color: red;
+    width: 50%;
+}
+.container-2
+{
+    width: 400px;
+    border: 2px solid black;
+    /* border representa 100% do container */
+}
+.container-2 div{
+    background-color: blue;
+    margin-top: 1px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+/* - Viem width(vw) e Viem heigth(vh)  */
+/* medidas relativas a tela visivel  */
+/* 1 vw = 1% da medida da tela visivel  */
+.div-3
+{
+    background-color: seagreen;
+    width: 50vw;
+}
+.container-3
+{
+    width: 400px;
+    border: 2px solid black;
+    /* não deprende do tamanho do container, mas sim da tela */
+}
+.container-3 div{
+    background-color: goldenrod;
+    margin-top: 1px;
+    width: 50vw;
+    margin-bottom: 10px;
+}
+/* - em vs rem  */
+/* relativas ao tamanho da fonte  */
+.div-4
+{
+    background-color: purple;
+    width: 10rem;
+    /* rem - é relativo a fonte padrão ou hoot  */
+}
+.container-4
+{
+    width: 400px;
+    font-size: 25px;
+}
+.container-4 div{
+    background-color: turquoise;
+    margin-top: 1px;
+    width: 10em;
+    /* em - é relativo a fonte do container  */
+}
